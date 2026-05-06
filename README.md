@@ -1,19 +1,34 @@
-# House Price Prediction & Customer Segmentation
+# House Price Prediction and Customer Segmentation Pipeline
 
-A full-stack machine learning project for predicting house prices and segmenting customers using regression and clustering workflows.
+A production-ready ML repository for regression and clustering workflows that predict house prices and segment customers using Python, Streamlit, and explainable model pipelines.
 
 ## Overview
 
-This repository contains a dual-purpose ML project that combines house price prediction and customer segmentation. It includes end-to-end data processing, model training, evaluation, serialization, and a Streamlit application for interactive prediction and analysis.
+This repository implements a complete machine learning workflow for:
+
+- predicting house prices from real estate feature data
+- segmenting customers based on demographic and transaction behavior
+
+It includes data preparation, model training, evaluation, serialized artifacts, and a Streamlit interface for interactive prediction and analysis.
 
 ## Features
 
-- House price regression using XGBoost, LightGBM, and Gradient Boosting
-- Customer segmentation with K-Means, DBSCAN, and hierarchical clustering
-- Data preprocessing with imputation, scaling, and feature engineering
-- Training pipelines with model comparison and serialized artifacts
-- Streamlit app for real-time price prediction and batch CSV processing
-- Project documentation, issue templates, and a reusable repo checklist
+- Regression models for house price prediction using XGBoost, LightGBM, and Gradient Boosting
+- Clustering workflows for customer segmentation using K-Means, DBSCAN, and hierarchical clustering
+- Automated preprocessing with imputation, scaling, encoding, and feature engineering
+- Serialized models and comparison metrics for reproducible evaluation
+- Streamlit app for interactive prediction and batch CSV upload
+- GitHub issue and PR templates for structured feedback
+
+## Topics
+
+- house-price-prediction
+- customer-segmentation
+- machine-learning
+- streamlit
+- regression
+- clustering
+- data-science
 
 ## Tech Stack
 
@@ -34,14 +49,14 @@ This repository contains a dual-purpose ML project that combines house price pre
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ali-ezz/House-Price-Prediction-Customer-Segmentation.git
-   cd House-Price-Prediction-Customer-Segmentation
+   git clone https://github.com/ali-ezz/house-price-prediction-customer-segmentation.git
+   cd house-price-prediction-customer-segmentation
    ```
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-3. Verify that the primary data files are present:
+3. Confirm the primary datasets exist:
    - `archive (2)/output.csv`
    - `clustering_customers.csv`
 
@@ -53,7 +68,7 @@ Run the Streamlit application:
 streamlit run app.py
 ```
 
-Or run training and evaluation scripts:
+Train or evaluate models using scripts:
 
 ```bash
 python train_model.py
@@ -64,39 +79,39 @@ python train_stacked.py
 
 ## Project Structure
 
-- `README.md` — project overview and usage
+- `README.md` — project overview and usage guide
 - `LICENSE` — open source license
 - `.gitignore` — ignored files for Python and environment artifacts
 - `requirements.txt` — Python dependencies
 - `.env.example` — environment variable template
 - `CONTRIBUTING.md` — contribution guidelines
 - `.github/` — GitHub issue and PR templates
-- `tests/` — automated repository sanity checks
+- `tests/` — automated repository tests
 - `app.py` — Streamlit application entry point
 - `train_model.py` — model training pipeline
 - `train_model_full.py` — extended training pipeline
 - `train_model_fast.py` — faster training pipeline
-- `train_stacked.py` — model stacking pipeline
+- `train_stacked.py` — stacking pipeline
 - `archive (2)/output.csv` — house price dataset
 - `clustering_customers.csv` — customer segmentation dataset
 - `models/` — model artifacts and results
 
 ## Results
 
-This project stores model outputs and comparison metrics under `models/`. Key artifacts include:
+Key artifacts stored in `models/` include:
 
 - `models/model_comparison.csv`
 - `models/processed_data.csv`
 - `models/best_pipeline.pkl`
 
-Use these artifacts to compare model performance and reproduce predictions.
+Use these artifacts to reproduce evaluation metrics and predictions.
 
 ## Future Improvements
 
-- Add structured tests for training pipelines and model scoring
-- Refactor components into a `src/` package for cleaner imports
-- Add a Docker setup for reproducible deployment
-- Add a lightweight API endpoint for production inference
+- Add package structure under `src/` for cleaner imports
+- Add API deployment support for production inference
+- Add more structured model validation tests
+- Add Docker packaging for reproducible environment setup
 
 ## License
 
